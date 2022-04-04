@@ -1,0 +1,117 @@
+body {
+    text-align: center;
+    background-color: rgb(80, 157, 230);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+h1{
+    font-family: monospace;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+label{
+    font-size: 2rem;
+    font-family: monospace;
+}
+.quadrado {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background: rgb(80, 157, 230);
+    border-radius: 100%;
+    display: inline-block;
+    padding: 40px;
+    font-size: 60px;
+    line-height: 50px;
+    margin: 5px;
+    font-family: monospace;
+    cursor: pointer;
+    color: #eee;
+    box-shadow: -5px -5px 5px rgb(37, 119, 196), 5px 5px 5px rgb(80, 157, 230);
+}
+.quadrado.branco {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 100%;
+    display: inline-block;
+    padding: 40px;
+    font-size: 60px;
+    line-height: 50px;
+    margin: 5px;
+    font-family: monospace;
+    cursor: pointer;
+    color: #eee;
+    box-shadow: -5px -5px 5px #eee, 5px 5px 5px white;
+}
+.quadrado:active{
+    box-shadow: 5px 5px 5px rgb(37, 119, 196), -5px -5px 5px rgb(80, 157, 230);
+}
+
+.jogador, .vencedor {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+
+button{
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    background-color: rgb(80, 157, 230);
+    border: none;
+    box-shadow: 5px 5px 5px rgb(37, 119, 196), -5px -5px 5px rgb(80, 157, 230);
+    border-radius: 1rem;
+}
+button:active{
+    box-shadow: -2px -2px 5px rgb(37, 119, 196), 2px 2px 5px rgb(80, 157, 230);
+}
+button.branco{
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    box-shadow: -5px -5px 5px #eee, 5px 5px 5px white;
+    border-radius: 1rem;
+}
+
+.botao{
+    background-color: #eee;
+    border: 1px solid black;
+    width: 40px;
+    height: 20px;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    padding: 0.1rem;
+    cursor: pointer;
+    position: relative;
+}
+.dentro{
+    border-radius: 100%;
+    background-color: rgb(30, 127, 206);
+    width: 15px;
+    cursor: pointer;
+    height: 15px;
+    right: 1.5rem;
+    position: absolute;
+    transition: 0.5s all;
+}
+.passar{
+    right: 0.2rem;
+    transition: 0.5s all;
+}
+.black{
+    background-color: white;
+}
+.white{
+    color: black;
+}
